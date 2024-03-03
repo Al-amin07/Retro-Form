@@ -83,33 +83,33 @@
       </nav>
 
       <section>
-        <div class="p-24 flex gap-2 items-center  mt-6 h-[550px] border-2 rounded-xl bg-black bg-[url('./images/bgbanner.png')] bg-no-repeat bg-cover bg-center">
+        <div class="p-6 lg:p-24 flex flex-col lg:flex-row gap-6 lg:gap-2 items-center  mt-6  border-2 rounded-xl bg-black bg-[url('./images/bgbanner.png')] bg-no-repeat bg-cover bg-center">
 
-            <div class="text-white flex-1  space-y-12">
-                <h1 class="text-6xl font-bold ">Welcome to the <span class="text-[#797DFC]">ReTro</span> Forum</h1>
+            <div class="text-white flex-1 space-y-4 lg:space-y-12">
+                <h1 class="text-2xl lg:text-6xl font-bold ">Welcome to the <span class="text-[#797DFC]">ReTro</span> Forum</h1>
                 <p class="pp w-5/6">Share your favorite opinion and win and wp forum coffee mug!</p>
                 <div class="bg-white text-black px-4 py-2 flex justify-between rounded-full">
                     <input id="input-field" type="text" placeholder="Search here anything" class="text-black input input-bordered rounded-full w-full max-w-xs border-0" />
-                    <a onclick="clickedSearch()" class="btn rounded-full bg text-white  hover:text-black">Search</a>
+                    <a onclick="clickedSearch()" class="btn rounded-full text-lg lg:text-xl  bg text-white  hover:text-black">Search</a>
                 </div>
             </div>
-            <div class="flex-1 pl-12  ">
+            <div class="flex-1 lg:pl-12  ">
                 <div class="bg-white p-10 border-2 space-y-5 rounded-2xl">
                     <div class="flex justify-between">
-                        <h1 class="text-2xl text">Registered Users</h1>
-                        <h1 class="text-2xl text">01</h1>
+                        <h1 class="text-xl lg:text-2xl text">Registered Users</h1>
+                        <h1 class="text-xl lg:text-2xl text">01</h1>
                     </div>
                     <div class="flex justify-between">
-                        <h1 class="text-2xl text">Registered Users</h1>
-                        <h1 class="text-2xl text">01</h1>
+                        <h1 class="text-xl lg:text-2xl text">Forum</h1>
+                        <h1 class="text-xl lg:text-2xl text">05</h1>
                     </div>
                     <div class="flex justify-between">
-                        <h1 class="text-2xl text">Registered Users</h1>
-                        <h1 class="text-2xl text">01</h1>
+                        <h1 class="text-xl lg:text-2xl text">Topics</h1>
+                        <h1 class="text-xl lg:text-2xl text">01</h1>
                     </div>
                     <div class="flex justify-between">
-                        <h1 class="text-2xl text">Registered Users</h1>
-                        <h1 class="text-2xl text">01</h1>
+                        <h1 class="text-xl lg:text-2xl text">Replies</h1>
+                        <h1 class="text-xl lg:text-2xl text">01</h1>
                     </div>
                 </div>
 
@@ -118,18 +118,18 @@
         </div>
       </section>
     </header>
-    <main class="container px-10 mx-auto my-10">
+    <main class="container px-5 lg:px-10 mx-auto my-10">
         <section class="my-16 ">
             
             
            <h1 class="text-center text-[40px] font-bold">Deatils</h1>
-           <p class="text text-center w-3/6 mx-auto mb-10">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+           <p class="text text-center lg:w-3/6 mx-auto mb-10">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
            <div id="spinner" class="hidden flex h-80 justify-center items-center">
             <span class="loading loading-spinner loading-lg"></span>
           </div>
-           <div class="flex gap-6 ">
+           <div class="flex flex-col-reverse lg:flex-row gap-6 ">
             <!-- 1st -->
-            <div id="post-container" class="w-[800px]">
+            <div id="post-container" class="lg:w-[800px]">
 
             </div>
             <!-- 2nd -->
@@ -150,10 +150,10 @@
          
         </section>
         <section>
-          <div class="flex bg-[#12132D] px-[90px] py-[95px] rounded-2xl">
-            <div class="text-white">
-              <h1 class="text-[40px] font-bold">Join Our Forum</h1>
-              <p class="w-4/6  text-lg mt-4 mb-8">Share your favorite opinion and win and wp forum coffee mug! Yes, you can run unit tests and view the results directly within the app. </p>
+          <div class="flex flex-col-reverse gap-4 lg:gap-0 lg:flex-row bg-[#12132D] p-6 lg:px-[90px] lg:py-[95px] rounded-2xl">
+            <div class="text-white ">
+              <h1 class=" text-2xl lg:text-[40px] font-bold">Join Our Forum</h1>
+              <p class=" lg:w-4/6  text-lg mt-4 mb-8">Share your favorite opinion and win and wp forum coffee mug! Yes, you can run unit tests and view the results directly within the app. </p>
               <button class="btn bg border-0 text-white text-xl">Registered Now</button>
             </div>
             <div>
@@ -163,11 +163,11 @@
           </div>
         </section>
         <section class="my-16">
-          <h1 class="text-center text-[40px] font-bold">Latest Post</h1>
-          <p class="text text-center w-3/6 mx-auto mb-10">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+          <h1 class="text-center text-2xl lg:text-[40px] font-bold">Latest Post</h1>
+          <p class="text text-center lg:w-3/6 mx-auto mt-4 mb-10">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
           
          
-          <div id="latest-post" class="grid grid-cols-3 gap-8">
+          <div id="latest-post" class="grid grid-cols-1 lg:grid-cols-3 gap-8">
            
            
       
@@ -176,9 +176,9 @@
         </section>
 
     </main>
-    <footer class="text-center bg-[#F5F5F6] p-24">
+    <footer class="text-center bg-[#F5F5F6] p-6 lg:p-24">
       <h1 class="text-4xl font-bold">ReTro</h1>
-      <p class="w-3/6 mx-auto mt-4 mb-8 text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC</p>
+      <p class="lg:w-3/6 mx-auto mt-4 mb-8 text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC</p>
       <div class="flex justify-center gap-5">
         <img src="images/1.png" alt="">
         <img src="images/2.png" alt="">
