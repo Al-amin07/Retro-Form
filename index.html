@@ -73,11 +73,11 @@
           <div class="navbar-end space-x-5">
 
             
-            <a title="Home" class=" hidden lg:flex btn btn-circle "><img src="images/home.png" alt=""></a>
-            <a title="Pen" class=" hidden lg:flex btn btn-circle"><img src="images/pen.png" alt=""></a>
-            <a title="Person" class=" hidden lg:flex btn btn-circle"><img src="images/person.png" alt=""></a>
-            <a title="Flag" class=" hidden lg:flex btn btn-circle"><img src="images/flag.png" alt=""></a>
-            <a class="btn bg text-white rounded-full hover:text-black">Sign in</a>
+            <a title="home" class=" hidden lg:flex btn btn-circle "><img src="images/home.png" alt=""></a>
+            <a title="edit" class=" hidden lg:flex btn btn-circle"><img src="images/pen.png" alt=""></a>
+            <a title="add" class=" hidden lg:flex btn btn-circle"><img src="images/person.png" alt=""></a>
+            <a title="profile" class=" hidden lg:flex btn btn-circle"><img src="images/flag.png" alt=""></a>
+            <a class="btn bg text-white text-xl rounded-full hover:text-black">Sign in</a>
           </div>
         </div>
       </nav>
@@ -124,7 +124,9 @@
             
            <h1 class="text-center text-[40px] font-bold">Deatils</h1>
            <p class="text text-center w-3/6 mx-auto mb-10">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
-
+           <div id="spinner" class="hidden flex h-80 justify-center items-center">
+            <span class="loading loading-spinner loading-lg"></span>
+          </div>
            <div class="flex gap-6 ">
             <!-- 1st -->
             <div id="post-container" class="w-[800px]">
@@ -164,9 +166,7 @@
           <h1 class="text-center text-[40px] font-bold">Latest Post</h1>
           <p class="text text-center w-3/6 mx-auto mb-10">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
           
-          <div id="" class="hidden transition ease-in transition-property:flex transition-duration: 2s h-80 justify-center items-center">
-            <span class="loading loading-spinner loading-lg"></span>
-          </div>
+         
           <div id="latest-post" class="grid grid-cols-3 gap-8">
            
            

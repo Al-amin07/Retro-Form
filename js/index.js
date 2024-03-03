@@ -87,10 +87,23 @@ const clickedEmail = (title, view) => {
 }
 
 const clickedSearch = () => {
+    spin(1);
+    setTimeout(spin, 2000);
 
     const inputText = document.getElementById('input-field');
     const inputValue = inputText.value.replace(/\'/g, "");
     searchPost(inputValue);
+
+}
+
+const spin = (x) => {
+    const s = document.getElementById('spinner');
+    if(x){
+        s.classList.remove('hidden');
+    }
+    else{
+        s.classList.add('hidden');
+    }
 
 }
 
