@@ -76,7 +76,7 @@ const clickedEmail = (title, view) => {
     document.getElementById('count').innerText = count;
     const parent = document.getElementById('click-container');
     const div = document.createElement('div');
-    div.classList = `flex justify-between gap-2 mb-6 bg-white p-4 rounded-xl`
+    div.classList = `flex justify-between  mb-6 bg-white p-4 rounded-xl`
     div.innerHTML = `
     <h1 class="font-semibold text-lg">${title}</h1>
     <h1 class="w-[110px] text-lg"><img class="inline" src="images/eye (1).png" alt=""> <span> ${view
